@@ -1,0 +1,136 @@
+<!-- The following code is an HTML document that represents a dashboard page for an IS project. -->
+<!DOCTYPE html> <!-- This line declares that this is an HTML document -->
+<html lang="en"> <!-- This line specifies the language of the document -->
+<head>
+    <meta charset="UTF-8"> <!-- This line sets the character encoding to UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- This line sets the compatibility mode to IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This line sets the viewport to the width of the device and scales the content to fit the screen -->
+    <title>IS Project | Dashboard</title> <!-- This line sets the title of the page -->
+    <link rel="stylesheet" href="style.css"> <!-- This line links to an external CSS file -->
+</head>
+<body>
+    <!-- This div contains the header section of the page -->
+    <div class = "header">
+        <div class="container">
+            <div class="navbar">
+                <!-- This div contains the logo of the website and its hyperlink -->
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/homelogo.png" width="125px" alt="Example Image">
+                    </a>
+                </div>
+                <!-- This unordered list contains the navigation menu links -->
+                <nav>
+                    <ul >  
+                        <li><a class="navb" href="shipments.html">CREATE SHIPMENT</a></li>
+                        <li><a class="navb" href="createCertificate.html">CREATE CERTIFICATES</a></li>
+                        <li><a class="navb" href="#show">SHOW ALL SUPPLY CHAINS</a></li>
+                        <li><a class="navb" href="createnew.html">CREATE NEW SUPPLY CHAIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- This horizontal line separates the header section from the rest of the page -->
+            <hr style="border: 1px solid #00a2e8;">
+            <!-- This div contains two columns of text and an image -->
+            <div class="row">
+                <div class="column1">
+                    <br>
+                    <h2>Here you can view the supply chains that you<br> have created in the past :</h2>
+                </div>
+                <div class="column1">
+                    <img src="images/tri.png" width="550" height="430">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- This div contains the section that displays all supply chains -->
+    <div id="show" class="small-container">
+        <div class="row row-2">
+            <h2> All Supply-Chains :</h2>
+            <h5>Sort By :</h5>
+            <select>
+                <option >Default</option>
+                <option >Creation date</option>
+                <option >Alphabetically</option>
+            </select>
+        </div>
+        <!-- This div contains the table of supply chains -->
+        <div class="table-wrap">
+            <table class="table">
+                <thead class="thead-primary">
+                    <tr>
+                        <th>Supply Chain No.</th>
+                        <th>Supply Chain Id</th>
+                        <th>Product</th>
+                        <th>Creator</th>
+                        <th>Creation Date</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- These table rows contain data for each supply chain -->
+                <tr>
+        <th scope="row" class="scope" >1</th>
+        <td>SC01 </td>
+        <td>Mango</td>
+        <td>ABC</td>
+        <td>01/01/2020</td>
+        <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+      <tr>
+        <th scope="row" class="scope" >2</th>
+        <td>SC01 </td>
+        <td>Mango</td>
+        <td>ABC</td>
+        <td>01/01/2020</td>
+        <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+      <tr>
+        <th scope="row" class="scope" >3</th>
+        <td>SC01 </td>
+        <td>Mango</td>
+        <td>ABC</td>
+        <td>01/01/2020</td>
+        <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+      <tr>
+        <th scope="row" class="scope" >4</th>
+        <td>SC01 </td>
+        <td>Mango</td>
+        <td>ABC</td>
+        <td>01/01/2020</td>
+        <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+      <tr>
+        <th scope="row" class="scope" >5</th>
+        <td>SC01 </td>
+        <td>Mango</td>
+        <td>ABC</td>
+        <td>01/01/2020</td>
+        <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+    
+
+      <tr>
+        <th scope="row" class="scope border-bottom-0">6</th>
+        <td class="border-bottom-0">SC01</td>
+        <td class="border-bottom-0">Mango</td>
+        <td class="border-bottom-0">ABC</td>
+        <td class="border-bottom-0">01/01/2020</td>
+        <td class="border-bottom-0"><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+   <div class="page-btn">
+    <a href="letsbegin.html"> <span>1</span> </a>
+    <a href="page2.html"> <span>2</span> </a>
+    <a href="page3.html"> <span>3</span> </a>
+    <span>4</span>
+    <span>&#8594;</span>
+   </div>
+</div>
+
+</body>
+</html>

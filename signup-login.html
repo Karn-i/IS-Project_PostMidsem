@@ -1,0 +1,63 @@
+<!-- This is an HTML document with English language -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head of the HTML file containing metadata -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <!-- Linking the stylesheet with the HTML file -->
+    <link rel="stylesheet" href="signup-login-styles.css">
+</head>
+<body>
+    <!-- Creating a container to hold data or content -->
+    <div class="container">
+        <!-- Creating a box to hold content -->
+        <div class="box-1">
+            <!-- Creating a holder to hold the content in the box -->
+            <div class="content-holder">
+                <h2>Hello!</h2>
+                <!-- Creating two buttons to initiate Sign up and Login functions -->
+                <button class="button-1" onclick="signup()">Sign up</button>
+                <button class="button-2" onclick="login()">Login</button>
+            </div>
+        </div>
+            <!-- Creating another box to hold forms -->
+    <div class="box-2">
+        <!-- Creating a container to hold the login form -->
+        <div class="login-form-container">
+            <!-- Details of the login form -->
+            <h1>Login Form</h1>
+            <form name="myForm" action="home.html" onsubmit="return validateForm()">
+                <input name="username" type="text" placeholder="Username" class="input-field">
+                <br><br>
+                <input name="pass" type="password" placeholder="Password" class="input-field">
+                <br><br>
+                <input class="login-button" type="submit" value="Log In">
+            </form>
+        </div>
+
+        <!-- Creating a container to hold the signup form -->
+        <div class="signup-form-container">
+            <!-- Details of the signup form -->
+            <h1>Sign Up Form</h1>
+            <form name= "myform" action="home.html" onsubmit="return formF()">
+                <input name="name"type="text" placeholder="Username" class="input-field">
+                <br><br>
+                <input name="email" type="email" placeholder="Email" class="input-field">
+                <br><br>
+                <input name="passw" type="password" placeholder="Create Password" class="input-field">
+                <br><br>
+                <input name="passc" type="password" placeholder="Confirm Password" class="input-field">
+                <br><br>
+                <input class="signup-button" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+    <!-- Linking the JavaScript file with the HTML file -->
+    <script src="signup-login-app.js"></script>    
+</div>
+</body>
+<!-- End of the HTML document -->
+</html>

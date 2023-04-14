@@ -1,0 +1,149 @@
+<!--This is the beginning of the HTML code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Setting the character encoding and compatibility for the website-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Setting the viewport size for the website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Setting the title of the webpage-->
+    <title>IS Project | Supply Chain Details</title>
+    <!--Linking the external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--The header section of the webpage-->
+    <div class="header">
+        <!--The container that wraps the content of the navbar-->
+        <div class="container">
+            <!--The navbar that contains the logo and navigation links-->
+            <div class="navbar">
+                <!--The logo image and link-->
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/homelogo.png" width="125px" alt="Example Image">
+                    </a>
+                </div>
+                <!--The navigation links-->
+                <nav>
+                    <ul>
+                        <li><a class="navb" href="createnew.html">CREATE SHIPMENT</li>
+                        <li><a class="navb" href="#show">SHOW ALL SUPPLY CHAINS</a></li>
+                        <li><a class="navb" href="createnew.html">CREATE NEW SUPPLY CHAIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--A horizontal line to separate the header from the rest of the webpage-->
+            <hr style="border: 1px solid #00a2e8;">
+        </div>
+    </div>
+    <!--The section that displays the details of a particular supply chain-->
+<div class="small-container singleChain" id="show">
+    <!--The heading for the supply chain details-->
+    <h1 class="heading">Supply Chain Details</h1><br>
+    <!--A table to display the supply chain information-->
+    <div class="table-wrap">
+        <table class="table">
+            <!--The table header with the column titles-->
+            <thead class="thead-primary">
+                <tr>
+                    <th>Supply Chain Id</th>
+                    <th>Product</th>
+                    <th>Origin</th>
+                    <th>Creator</th>
+                    <th>Creation Date</th>
+                    <th>Status</th>
+                    <th>No. of Member</th>
+                </tr>
+            </thead>
+            <!--The table body with the supply chain data-->
+            <tbody>
+                <tr>
+                    <th scope="row" class="scope border-bottom-0">SCM01</th>
+                    <td class="border-bottom-0">Mango</td>
+                    <td class="border-bottom-0">India</td>
+                    <td class="border-bottom-0">ABC</td>
+                    <td class="border-bottom-0">01/01/2020</td>
+                    <td class="border-bottom-0">Transportation</td>
+                    <td class="border-bottom-0">07</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Heading for the member details-->
+        <br><br>
+        <h1 class="heading">Member Details</h1><br>
+        <!--A table to display the member information-->
+        <table class="table">
+            <!--The table header with the column titles-->
+            <thead class="thead-primary">
+            <tr>
+                <th>Member Id</th>
+                <th>Member Name</th>
+                <th>Designation</th>
+                <th>Location</th>
+                <th>Contact Info</th>
+                <th>Date Added</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="scope" >SCM01</th>
+                <td>XYZ</td>
+                <td>Exporter</td>
+                <td>abc</td>
+                <td>9876543210</td>
+                <td>01/01/2020</td>
+              </tr>
+              <tr>
+                <th scope="row" class="scope" >SCM01</th>
+                <td>XYZ</td>
+                <td>Exporter</td>
+                <td>abc</td>
+                <td>9876543210</td>
+                <td>01/01/2020</td>
+              </tr>
+              <tr>
+                <th scope="row" class="scope" >SCM01</th>
+                <td>XYZ</td>
+                <td>Exporter</td>
+                <td>abc</td>
+                <td>9876543210</td>
+                <td>01/01/2020</td>
+              </tr>
+              <tr>
+                <th scope="row" class="scope" >SCM01</th>
+                <td>XYZ</td>
+                <td>Exporter</td>
+                <td>abc</td>
+                <td>9876543210</td>
+                <td>01/01/2020</td>
+              </tr>
+              <tr>
+                <th scope="row" class="scope" >SCM01</th>
+                <td>XYZ</td>
+                <td>Exporter</td>
+                <td>abc</td>
+                <td>9876543210</td>
+                <td>01/01/2020</td>
+              </tr>
+              <tr>
+                <th scope="row" class="scope border-bottom-0">SCM01</th>
+                <td class="border-bottom-0">XYZ</td>
+                <td class="border-bottom-0">Exporter</td>
+                <td class="border-bottom-0">abc</td>
+                <td class="border-bottom-0">9876543210</td>
+                <td class="border-bottom-0">01/01/2020</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+  
+ 
+</div>
+<script src="signup-login-app.js"></script>
+</body>
+</html>    

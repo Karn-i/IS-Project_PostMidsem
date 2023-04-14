@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.btn_round {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .btn_round:hover {
+    color: #fff;
+    background: #8bcdea;
+    border: 1px solid #8bcdea;
+  }
+  h2{
+    color:black;
+  }
+  .btn_content_outer {
+    display: inline-block;
+    width: 85%;
+  }
+  .close_c_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #2a93c0;
+    border: 1px solid #ccc;
+    color: #ff5c5c;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .add_icon {
+    padding: 10px;
+    border: 1px dashed #aaa;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .add_group_btn {
+    display: flex;
+  }
+  .add_group_btn i {
+    font-size: 32px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .add_group_btn span {
+    margin-top: 8px;
+  }
+  .add_group_btn,
+  .clone_sub_task {
+    cursor: pointer;
+  }
+  
+  .sub_task_append_area .custom_square {
+    cursor: move;
+  }
+  
+  .del_btn_d {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+.navbar{
+  width:100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  position:fixed;
+  background-color:#00a2e8 ;
+  color:white;
+}
+.container
+{
+    max-width: 100%;
+    margin:  auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.logo{
+  margin-left: 0px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  display: inline-block;
+  list-style: none;
+
+}
+nav ul li{
+  display: inline-block;
+  margin: 20px;
+}
+.navb{
+  color: #f7f9fa;
+}
+a{
+  text-decoration: none;
+  color: #00a2e8;
+  font-weight: bold;
+}
+.firstcontainer{
+  width:100%;
+  background-color: #00a2e8;
+  margin: 0px;
+  padding: 0px;
+}
+#ship{
+  height: 68px;
+}

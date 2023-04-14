@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css"> <!-- Linking the external stylesheet -->
+  </head>
+  <body>
+    <br><br><br><br><br><br>
+    <div class="main">
+      <h1>Sign Up</h1> <!-- Heading for Sign Up page -->
+    <label for="username">Username:</label>
+    <input type="text" id="username"> <!-- Text input for username -->
+
+    <label for="password">Password:</label>
+    <input type="password" id="password"> <!-- Password input field -->
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password"> <!-- Confirm password input field -->
+
+    <button onclick="submitForm()">Submit</button> <!-- Submit button to trigger submitForm function -->
+</div>
+    <script>
+      function submitForm() {
+        const username = document.getElementById("username").value; // Get value of username input field
+        const password = document.getElementById("password").value; // Get value of password input field
+        const confirm_password = document.getElementById("confirm_password").value; // Get value of confirm password input field
+
+        // make API request to server
+        fetch("http://localhost:3000/api/login", {
+          method: "POST",
+          body: JSON.stringify({username, password, confirm_password}), // Send POST request with username, password and confirm password data
+          headers: { "Content-Type": "application/json" } // Setting headers for content-type
+        })
+        .then(response => response.json()) // Converting the response to json format
+        .then(data => {
+          // display user ID
+          const userId = data.userId; // Extracting userId from the response data
+          alert("Your user ID is: " + userId); // Displaying user ID using alert dialog
+        })
+        .catch(error => {
+          // handle error
+          console.error("Error:", error); // Logging the error to the console
+          alert("An error occurred. Please try again."); // Displaying an alert message for the user
+        });
+      }
+    </script>
+  </body>
+</html>

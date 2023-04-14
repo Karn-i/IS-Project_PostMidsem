@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS Project | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+       
+            <a href="home.html">
+                <img src="images/homelogo.png" width="125px" alt="Example Image" >
+            </a>
+        </div>
+
+
+    <nav><ul>
+        <li ><a class="navb" href="shipment.html">CREATE SHIPMENT</a></li>
+        <li ><a class="navb" href="#show">SHOW ALL SUPPLY CHAINS</a></li>
+        <li ><a class="navb" href="createnew.html">CREATE NEW SUPPLY CHAIN</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <hr style="border: 1px solid #00a2e8;">
+    
+</div>
+<div class="small-container" id="show">
+    <div class="row row-2">
+       <h2> All Supply-Chains :</h2>
+       <h5>Sort By :</h5>
+       <select>
+           <option >Default</option>
+           <option >Creation date</option>
+           <option >Alphabetically</option>
+       </select>
+    </div>   
+
+   <div class="table-wrap">
+    <table class="table">
+        <thead class="thead-primary">
+          <tr>
+            <th>Supply Chain No.</th>
+            <th>Supply Chain Id</th>
+            <th>Product</th>
+            <th>Creator</th>
+            <th>Creation Date</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="scope" >13</th>
+            <td>SC01 </td>
+            <td>Mango</td>
+            <td>ABC</td>
+            <td>01/01/2020</td>
+            <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="scope" >14</th>
+            <td>SC01 </td>
+            <td>Mango</td>
+            <td>ABC</td>
+            <td>01/01/2020</td>
+            <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="scope" >15</th>
+            <td>SC01 </td>
+            <td>Mango</td>
+            <td>ABC</td>
+            <td>01/01/2020</td>
+            <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="scope" >16</th>
+            <td>SC01 </td>
+            <td>Mango</td>
+            <td>ABC</td>
+            <td>01/01/2020</td>
+            <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+          <tr>
+            <th scope="row" class="scope" >17</th>
+            <td>SC01 </td>
+            <td>Mango</td>
+            <td>ABC</td>
+            <td>01/01/2020</td>
+            <td><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+        
+    
+          <tr>
+            <th scope="row" class="scope border-bottom-0">18</th>
+            <td class="border-bottom-0">SC01</td>
+            <td class="border-bottom-0">Mango</td>
+            <td class="border-bottom-0">ABC</td>
+            <td class="border-bottom-0">01/01/2020</td>
+            <td class="border-bottom-0"><a href="chaindetails.html" class="btn btn-primary">Click</a></td>
+          </tr>
+        </tbody>
+      </table>
+  </table>
+</div>
+   <div class="page-btn">
+    <a href="home.html"> <span>1</span> </a>
+    <a href="page2.html"> <span>2</span> </a>
+    <a href="page3.html"> <span>3</span> </a>
+    <span>4</span>
+    <span>&#8594;</span>
+   </div>
+</div>
+<script src="signup-login-app.js"></script>
+</body>
+</html>
